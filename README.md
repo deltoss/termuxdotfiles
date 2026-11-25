@@ -12,19 +12,9 @@ pkg install git nushell chezmoi
 chezmoi init deltoss/termuxdotfiles --apply
 ```
 
-Try the managed shell before making it the default:
+Chezmoi sets `nu-termux` as the default login shell once, after deploying the wrapper and configuration. Open a new Termux session and check `$nu.config-path` and `$nu.env-path`. Both should point to files in `~/.config/nushell/profiles/termux/`.
 
-```sh
-~/.local/bin/nu-termux
-```
-
-Check `$nu.config-path` and `$nu.env-path` in Nushell. Both should point to `~/.config/nushell/profiles/termux/`. Exit back to your original shell, then activate it:
-
-```sh
-chsh -s "$HOME/.local/bin/nu-termux"
-```
-
-Open a new Termux session. To restore the original default shell, run `chsh -s bash`.
+To restore Bash, run `chsh -s bash`. Subsequent applies will not reset your shell choice unless the setup script changes.
 
 ## Updating
 
