@@ -1,0 +1,15 @@
+#!/data/data/com.termux/files/usr/bin/nu --no-config-file
+
+# Run Pi in a specific Obsidian vault.
+def main [vault: path] {
+  let directory = ($vault | path expand)
+  if not ($directory | path exists) {
+    error make {msg: $"Vault not found: ($directory)"}
+  }
+  if ($directory | path type) != "dir" {
+    error make {msg: $"Not a directory: ($directory)"}
+  }
+
+  cd $directory
+  ^pi
+}

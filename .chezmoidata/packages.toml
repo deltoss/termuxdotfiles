@@ -1,0 +1,26 @@
+[packages]
+termux = [
+  "git",
+  "nushell",
+  "chezmoi",
+  "neovim",
+  "yazi",
+  "zellij",
+  "starship",
+  "zoxide",
+  "fzf",
+  "ripgrep",
+  "fd",
+  "bat",
+  "eza",
+  "less",
+  "openssh",
+  "nodejs",
+  "npm",
+  "make",
+  "clang",
+  "unzip",
+]
+npm = [
+  "@earendil-works/pi-coding-agent",
+]

@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/sh
+# Select the mobile profile for login shells and child shells.
+case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;
+  *) export PATH="$HOME/.local/bin:$PATH" ;;
+esac
+export SHELL="$HOME/.local/bin/nu-termux"
+exec "$PREFIX/bin/nu" --config-home "$HOME/.config/nushell/profiles/termux" "$@"

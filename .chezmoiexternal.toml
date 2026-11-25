@@ -1,0 +1,9 @@
+[".config/nushell"]
+  type = "git-repo"
+  url = "https://github.com/deltoss/nushell-config.git"
+  refreshPeriod = "168h"
+
+[".config/nvim"]
+  type = "git-repo"
+  url = "https://github.com/deltoss/kickstart.nvim.git"
+  refreshPeriod = "168h"

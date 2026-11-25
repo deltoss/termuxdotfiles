@@ -1,0 +1,5 @@
+let packages = '{{ .packages.termux | toJson }}' | from json
+let npm_packages = '{{ .packages.npm | toJson }}' | from json
+
+^pkg install -y ...$packages
+^npm install --global --ignore-scripts ...$npm_packages
