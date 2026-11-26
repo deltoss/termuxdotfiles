@@ -39,8 +39,8 @@ Replace the path with your vault location. Back up the vault before allowing AI 
 
 ## Scope
 
-No root, proot, desktop services or password manager. Yazi uses its default configuration with the shared Nushell integration. Zellij uses the managed shell; desktop-specific layout shortcuts require separate layout files. Neovim plugins may need additional native dependencies or Android-specific adjustments. Termux font and colour overrides are intentionally left unmanaged.
+No root, proot, desktop services or password manager. Yazi uses its default configuration with the shared Nushell integration. Zellij uses the managed shell; desktop-specific layout shortcuts require separate layout files. Neovim plugins may need additional native dependencies or Android-specific adjustments. Chezmoi installs JetBrains Mono Nerd Font for Termux icons. Colour overrides are intentionally left unmanaged.
 
-After changing extra keys, run `termux-reload-settings`.
+After installing the font or changing extra keys, run `termux-reload-settings`.
 
 The initial setup has not been runtime-tested on Android.
